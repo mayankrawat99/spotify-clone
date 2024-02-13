@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="homebar flex">
+        <div>
+        <img width="90px" src="svg/logo.svg" alt="spotify" style="filter: invert(1)">
+      <img height="28px" id="close" src="svg/close.svg" alt=""></div>
+        <div class="homebar-icon flex">
+          <img class="invert" width="30px" src="svg/home.svg" alt="">
+          Home
+        </div>
+        <div class="homebar-icon flex">
+          <img class="invert" width="23px" src="svg/search.svg" alt="">
+          Search
+        </div>
+      </div>
+      <div class="library">
+        <h2 class=" flex homebar-icon">
+          <img class="invert" height="27px" src="/svg/playlist.svg" alt="">
+          Your Library
+        </h2>
+        <div class="songslist">
+          <ul></ul>
+        </div>
+
+        <div class="footer flex"> <a href="">Cookies</a>
+        <a href=""> Legal</a> 
+         <a href=""> Privacy Center</a>
+         
+         <a href="">Privacy Policy</a>
+          </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class=" flex nav">
+       
+        <div class="slide-btn flex  ">
+          <span class="menu-btn flex " id="menu"><img height="24px" src="svg/menu.svg" alt=""></span>
+          <span class="btn">&lt;</span>
+          <span class="btn">&gt;</span>
+        </div>
+        <div class="process  ">
+          <button class="signup">Sign up</button>
+          <button class="login">Log in</button>
+        </div>
+      </div>
+      <div class="spotifyplaylist">
+        <h2>Spotify Playlists</h2>
+        <div class="card-container flex ">
+          
+
+        </div>
+
+      </div>
+
+      <div class="playbar flex">
+       <div class="playinfo flex">
+        <div class="songname"> Loading... </div>
+        <div class="playbar-btn flex">
+          <img id="previous" height="40px" src="svg/previous.svg" alt="">
+          <img id="play" height="40px" src="svg/player.svg" alt="">
+          <img id="next" height="40px" src="svg/next.svg" alt="">
+        </div>
+        <div class="volumebar">
+          <img id="soundicon" src="svg/sound.svg" alt="" height="20px">
+          <div class="seekbar">
+            <input type="range" name="" class="seek" id="volume" min="0" max="100" value="60" >
+            <div class="bar2"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+        
+        <div class="playseekbar flex"><span class="currenttime">00:00</span>
+          <div class="seekbar">
+            <input type="range" name="" class="seek" id="seekbar" min="0" max="100" value="0" >
+            <div class="bar2 bar"></div>
+            <div class="dot dotseek"></div>
+          </div>
+          <span class="endtime">00:00</span>
+        </div>
+       
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
